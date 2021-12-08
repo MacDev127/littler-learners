@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <p>Logo</p>
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- Quiz Section -->
+
+    <div class="quiz">
+
+
+        <h2 class="title">Alphabet Quiz</h2>
+        <h2 class="sub-title">On with the questions.....</h2>
+
+
+        <form class="quiz-form">
+            <div class="question-1">
+                <p class="lead">
+                    1. 'Gum' begins with a 'g'; which letter follows 'g' in the alphabet?
+                </p>
+                <div class="form-check">
+                    <input type="radio" name="Q1" value="A" checked />
+                    <label class="form-check-label">H</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Q1" value="B" />
+                    <label class="form-check-label">S</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Q1" value="C" />
+                    <label class="form-check-label">J</label>
+                </div>
+            </div>
+            <div class="question-2">
+                <p class="lead">
+                    2. What are the last three letters of the alphabet?
+                </p>
+                <div class="form-check">
+                    <input type="radio" name="Q2" value="A" checked />
+                    <label class="form-check-label">M,N,O</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Q2" value="B" />
+                    <label class="form-check-label">X,Y,Z</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Q2" value="c" />
+                    <label class="form-check-label">X,Y,Z</label>
+                </div>
+            </div>
+            <div class="question-3">
+                <p class="lead">
+                    3. What are the first three letters of the alphabet?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="Q3" value="A" checked />
+                    <label class="form-check-label">E,F,G</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="Q3" value="B" />
+                    <label class="form-check-label">A,B,C</label >
+        </div>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="Q3" value="B" />
+          <label class="form-check-label">L,M,N</label >
+</div>
+           </div>
+          <div class="question-4">
+        <p class="lead">
+          4. Q R S - which letter comes next?
+        </p>
+        <div class="form-check my-2 text-white-50">
+          <input type="radio" name="Q4" value="A" checked />
+          <label class="form-check-label">Q</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Q4" value="B" />
+                    <label class="form-check-label">T</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="Q4" value="B" />
+                    <label class="form-check-label">Z</label>
+                </div>
+            </div>
+            <div class="sub-button">
+                <input type="submit" class="btn" />
+            </div>
+        </form>
+    </div>
+
+    <!-- Result section -->
+    <div class="result">
+        <div class="container-lead">
+            <p>You are <span class="text-primary.display-4 p-3"> 0%              </span>Smarty Pants!!</p>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
