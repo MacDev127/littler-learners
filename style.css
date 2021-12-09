@@ -30,7 +30,7 @@ body {
     color: #fff;
     padding-bottom: 20px;
     background: #9b5de5;
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 
@@ -91,24 +91,31 @@ body {
 
 .banner {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
     background-color: #00F5D4;
 }
 
 .banner-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
 }
+
+/* .bg-img img{
+    height: 200px;
+} */
 
 .banner-text {
     max-width: 700px;
     text-align: justify;
     letter-spacing: 1px;
-    padding-top: 40%;
+    padding-top: 30px;
     line-height: 30px;
 }
 
@@ -116,11 +123,15 @@ body {
     font-size: 26px;
 }
 
-.banner-area img {
-    padding-bottom: 30%;
+.banner-image{
     text-align: center;
-    height: 1200px;
 }
+
+.banner-image img{
+    height: 500px;
+}
+
+
 
 .buttons {
     display: flex;
@@ -129,7 +140,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 80px;
+   margin-top: 5%;
+}
+
+.buttons a{
+    text-decoration: none;
 }
 
 .banner-btn {
@@ -309,6 +324,108 @@ input[type=radio] {
 /* --------------Alphabet Quiz End -------------------------*/
 
 
+
+/* Game test */
+
+
+
+/* Game test end */
+/* -----------Footer --------------*/
+
+footer{
+    height: 180px;
+    background-color: #9b5de5;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+}
+
+.foot-title{
+    font-weight: 400;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-container li{
+    list-style: none;
+    color: #fff;
+}
+
+.foot-container a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-app{
+    padding: 10px 10px;
+}
+
+.footer-app li{
+    padding: 12px 0px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    margin: 8px 0;
+    border-radius: 5px;
+    width: 70%;
+    
+}
+
+.footer-app .fab{
+    padding: 0px 2px;
+    margin-left: 5px;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4%;
+}
+
+.socials{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.socials li{
+    margin: 0 18px;
+    font-size: 22px;
+}
+
+.socials li a:hover{
+    color: #00F5D4;
+    transition: ease-in.2s;
+}
+
+.footer-contact li{
+    padding: 4px 0;
+    font-size: 16px;
+}
+
+.footer-contact li a:hover{
+    color: #00F5D4;
+    transition: ease-in.2s;
+}
+
+.copy-right{
+    text-align: center;
+}
+/* -----------Footer End --------------*/
+
+
+
+
+
+
+
 /* Media Queries */
 
 @media (max-width: 375px) {
@@ -345,7 +462,7 @@ input[type=radio] {
     .sub-title {
         font-size: 20px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 400px) {
         .toggle-button {
             display: flex;
         }
