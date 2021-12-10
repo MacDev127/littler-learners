@@ -39,31 +39,72 @@
 
     </nav>
 
-    <section class="banner">
-        <div class="banner-area">
-            <!-- <div class="bg-img">
-                <img src="./images/logo.gif" alt="">
-            </div> -->
+    <h1 class="heading">Spelling Game</h1>
+    <div class="spell">
 
-            <div class="banner-text">
-                <p>It's never too early to start laying the foundation for your child's reading skills. In these interactive early literacy concept games, perfectly suited for a preschool or kindergarten level, your child will learn important concepts of
-                    reading comprehension, word recognition, story ordering, and more. The road to reading and writing success begins with early literacy games!</p>
-            </div>
-            <div class="buttons">
-                <button class="banner-btn">Game 1
-                    </button>
-                <button class="banner-btn">Game 2
-                    </button>
-                <button class="banner-btn">Game 3
-                    </button>
-            </div>
-            <div class="banner-image">
-                <img src="./images/bg-img.png" alt="">
-            </div>
+
+
+        <div class="spell-box-1">
+            <h2 id="name">What is this animal?</h2>
+            <p class="sub-heading">Can you spell it?</p>
+            <!-- spelling snake-->
+            <!-- snake pic-->
+            <img src="./images/dog.jpg" alt="">
+
+            <input type="text" id="dogText"></input>
+            <p class="hint">Hint</p>
+            <p class="clue">d _ _</p>
+            <button class="btn" onclick="checkDog();">check my answer!</button>
+            <p id="dogAnswer"></p>
         </div>
 
-    </section>
+        <div class="spell-box-2">
 
+            <h2 id="name">What is this animal?</h2>
+            <p class="sub-heading">Can you spell it?</p>
+            <img src="./images/cat.jpg" alt="">
+            <input type="text" id="catText"></input>
+            <p class="hint">Hint</p>
+            <p class="clue">c _ _</p>
+            <button class="btn" onclick="checkCat();">check my answer!</button>
+            <p id="catAnswer"> </p>
+
+        </div>
+
+
+        <div class="spell-box-3">
+
+            <h2 id="name">What is this animal?</h2>
+            <p class="sub-heading">Can you spell it?</p>
+
+            <img src="./images/shark.jpg" alt="">
+            <input type="text" id="sharkText"></input>
+            <p class="hint">Hint</p>
+            <p class="clue">S _ _ _ K</p>
+            <button class="btn" onclick="checkShark();">check my answer!</button>
+            <p id="sharkAnswer"> </p>
+        </div>
+
+
+        <div class="spell-box-4">
+            <h2 id="name">What is this animal?</h2>
+            <p class="sub-heading">Can you spell it?</p>
+            <img src="./images/horse.jpg" alt="">
+            <input type="text" id="horseText"></input>
+            <p class="hint">Hint</p>
+            <p class="clue">H _ _ _ E</p>
+            <button class="btn" onclick="checkHorse()" , onClick="go(100);">check my answer!</button>
+            <p id="horseAnswer"> </p>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <div class="score">You Scored : 0</div>
     <footer>
 
         <div class="foot-container">
@@ -102,6 +143,8 @@
 
     </footer>
     <script src="./app.js"></script>
+    <script src="./spell.js"></script>
+    <script src="./quiz.js"></script>
 </body>
 
 </html>

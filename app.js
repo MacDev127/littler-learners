@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
 
     //Show percentage result on page
 
-    scrollTo(0, 0); // takes user to top of page after submitting quiz
+    // scrollTo(0, 0); // takes user to top of page after submitting quiz
 
     result.querySelector("span").textContent = `${score}%`; // looks inside scope of .result div for a span tag, then updates text content with template literal (template string) with score variable
 

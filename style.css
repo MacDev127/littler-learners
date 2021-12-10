@@ -91,21 +91,21 @@ body {
 
 .banner {
     height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     background-color: #00F5D4;
 }
 
 .banner-area {
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-direction: column;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
 
 /* .bg-img img{
     height: 200px;
@@ -123,15 +123,13 @@ flex-wrap: wrap;
     font-size: 26px;
 }
 
-.banner-image{
+.banner-image {
     text-align: center;
 }
 
-.banner-image img{
+.banner-image img {
     height: 500px;
 }
-
-
 
 .buttons {
     display: flex;
@@ -140,10 +138,10 @@ flex-wrap: wrap;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   margin-top: 5%;
+    margin-top: 5%;
 }
 
-.buttons a{
+.buttons a {
     text-decoration: none;
 }
 
@@ -318,21 +316,152 @@ input[type=radio] {
 
 .result {
     text-align: center;
+    padding: 20px 0;
+    font-size: 22px;
 }
 
 
 /* --------------Alphabet Quiz End -------------------------*/
 
 
+/* ---------------------Spelling Game ----------------------------*/
 
-/* Game test */
+.heading {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-top: 60px;
+}
+
+.spell {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.spell-box-1,
+.spell-box-2,
+.spell-box-3,
+.spell-box-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 30px 28px 60px 28px;
+}
+
+.spell-box-1 img,
+.spell-box-2 img,
+.spell-box-3 img,
+.spell-box-4 img {
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
+}
+
+#name {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.sub-heading {
+    padding: 10px 0;
+    font-size: 22px
+}
+
+.spell-box-1 {
+    background-color: #00bbf9;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
+}
+
+.spell-box-2 {
+    background-color: #fee440;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
+}
+
+.spell-box-3 {
+    background-color: #f15bb5;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
+}
+
+.spell-box-4 {
+    background-color: #9b5de5;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
+}
+
+.btn {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 18px;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+
+.btn:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
+
+input[type=text] {
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hint {
+    font-size: 18px;
+    padding-top: 14px;
+}
+
+.clue {
+    text-transform: lowercase;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.score {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#horseAnswer {
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: ease-in .3s;
+}
 
 
+/* ------------------------Spelling Game end -----------------------*/
 
-/* Game test end */
+
 /* -----------Footer --------------*/
 
-footer{
+footer {
     height: 180px;
     background-color: #9b5de5;
     display: flex;
@@ -341,45 +470,44 @@ footer{
     overflow: hidden;
 }
 
-.foot-title{
+.foot-title {
     font-weight: 400;
 }
 
-.foot-container{
+.foot-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.foot-container li{
+.foot-container li {
     list-style: none;
     color: #fff;
 }
 
-.foot-container a{
+.foot-container a {
     text-decoration: none;
     color: #fff;
 }
 
-.footer-app{
+.footer-app {
     padding: 10px 10px;
 }
 
-.footer-app li{
+.footer-app li {
     padding: 12px 0px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     margin: 8px 0;
     border-radius: 5px;
     width: 70%;
-    
 }
 
-.footer-app .fab{
+.footer-app .fab {
     padding: 0px 2px;
     margin-left: 5px;
 }
 
-.footer-social{
+.footer-social {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -387,43 +515,39 @@ footer{
     padding-bottom: 4%;
 }
 
-.socials{
+.socials {
     padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-.socials li{
+.socials li {
     margin: 0 18px;
     font-size: 22px;
 }
 
-.socials li a:hover{
+.socials li a:hover {
     color: #00F5D4;
     transition: ease-in.2s;
 }
 
-.footer-contact li{
+.footer-contact li {
     padding: 4px 0;
     font-size: 16px;
 }
 
-.footer-contact li a:hover{
+.footer-contact li a:hover {
     color: #00F5D4;
     transition: ease-in.2s;
 }
 
-.copy-right{
+.copy-right {
     text-align: center;
 }
+
+
 /* -----------Footer End --------------*/
-
-
-
-
-
 
 
 /* Media Queries */
