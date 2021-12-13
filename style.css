@@ -66,6 +66,13 @@ body {
     border-radius: 8px;
 }
 
+
+/* .active,
+li a:hover {
+    background-color: #00f5d4;
+    border-radius: 8px;
+} */
+
 .toggle-button {
     position: absolute;
     top: 12px;
@@ -336,7 +343,8 @@ input[type=radio] {
     letter-spacing: 2px;
     padding-top: 60px;
     padding-bottom: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .spell {
@@ -345,7 +353,6 @@ input[type=radio] {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
     padding-bottom: 20px;
 }
 
@@ -486,6 +493,16 @@ input[type=text] {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
     border-radius: 10px;
     background-color: #00bbf9;
+}
+
+.jumble-title {
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 #game {
@@ -718,7 +735,8 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
+    /* Navigation */
     .toggle-button {
         display: flex;
         padding-top: 28px;
@@ -746,6 +764,7 @@ footer {
         display: flex;
         transition: ease-in-out .3s;
     }
+    /* Index Page */
     .title {
         font-size: 40px;
         padding-top: 30px;
@@ -778,6 +797,7 @@ footer {
     .banner-image img {
         height: 200px;
     }
+    /* Footer */
     footer {
         height: 100%;
     }
@@ -801,12 +821,13 @@ footer {
     .heading {
         font-size: 30px;
     }
-    /* ------fix this------------------ */
+    /* ------Quiz Page fix this------------------ */
     .quiz {
         height: 100%;
+        padding-top: 40%;
     }
     .quiz-form {
-        margin: 0 10px;
+        margin: 10px 10px;
     }
     .lead {
         font-size: 20px;
@@ -814,8 +835,12 @@ footer {
     .form-check-label {
         font-size: 18px;
     }
+    /* -----------Spelling-page--------- */
+    .heading {
+        padding-top: 48%;
+    }
     .spell {
-        padding-top: 40px;
+        padding-top: 0px;
     }
     .spell-box-1 img,
     .spell-box-2 img,
@@ -831,5 +856,25 @@ footer {
     .sub-heading {
         padding: 10px 0;
         font-size: 16px
+    }
+    input[type=text] {
+        width: 90%;
+    }
+    .spell-box-1,
+    .spell-box-2,
+    .spell-box-3,
+    .spell-box-4 {
+        padding: 30px 28px 20px 28px;
+    }
+    /* Jumble Page */
+    #game {
+        max-width: 310px;
+        height: 500px;
+    }
+    #user-guess {
+        width: 250px;
+    }
+    .jumble-title {
+        padding-top: 50%;
     }
 }

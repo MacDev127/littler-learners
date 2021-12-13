@@ -52,7 +52,7 @@ const lvlTwoWords = [
     "bell",
     "bets",
     "bind",
-    "bios",
+
     "book",
     "cabs",
     "case",
