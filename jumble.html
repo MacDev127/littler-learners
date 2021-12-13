@@ -17,11 +17,11 @@
 </head>
 
 <body>
-<!-- Navigation -->
+    <!-- Navigation -->
 
     <nav class="navbar">
         <div class="logo">
-            <img src="./images/logo-sean.png" alt="">
+            <img src="./images/bg-pic.png" alt="">
         </div>
         <div class="toggle-button">
             <a href="#"><i class="fas fa-bars"></i></a>
@@ -30,86 +30,77 @@
 
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./spelling.html">Spelling</a></li>
+                <li>
+                    <a href="./jumble.html">Jumble</a></li>
             </ul>
         </div>
 
     </nav>
-<!----------------- Navigation End ------------->
-<div class="game">
-
-    <h1>Scrambled Words</h1>
-    
-    <div id="rules">
-      <p class="lead">Unscamble the words.</p>
-      <p>Type in your guess <small>(Enter works)</small>.</p>
-      <p>Get three correct and level up.</p>
-      <p>Get a word wrong three times and restart.</p>
-      <p>Finish level 8 and you win.</p>
-      <p>Good luck!</p>
-      <button id="play-btn">Let's Play</button>
-    </div>
-  </nav>
-
-  <div id="game-container" class="hidden">
-    <p>Level: <span id="level">1</span></p>
-    <p>Score: <span id="score">0</span></p>
-    <p>Attempts: <span id="attempts">0</span></p>
-    <p id="info"></p>
-
-    <div id="guess-container">
-      <p id="scrambled-word"></p>
-
-      <input id="user-guess" type="text" placeholder="Enter your guess">
-      <button id="submit">Submit</button>
-      <button id="reset-btn">Reset</button>
-    </div>
-
-  </div>
-
-  
- 
-<!-- ------------------Footer-------------------------------------------- -->
-<footer>
-
-   <div class="foot-container">
-    <div class="footer-app">
-        <h2 class="foot-title">Download our Apps</h2>
-
-        <li><a href="#"><i class="fab fa-google-play"></i> Google Play</a></li>
-        <li><a href="#"><i class="fab fa-app-store-ios"></i> App Store</a></li>
-    </div>
-
-    <div class="footer-contact">
-        <h2 class="foot-title">Help</h2>
-
-        <li><a href="./contact.html">Game-1</a></li>
-        <li><a href="./register.html">Game-2</a></li>
-        <li><a href="./menu.html">Game-3</a></li>
-        <li><a href="#">Privacy</a></li>
+    <!----------------- Navigation End ------------->
 
 
-    </div>
+    <h1 class="title">Word Jumble</h1>
 
-    <div class="footer-social">
-        <h2 class="foot-title">Social Media</h2>
-        <div class="socials">
-          
+    <div id="game">
+        <div id="game-details">
+            <p>Level: <span id="level">1</span></p>
+            <p>Score: <span id="score">0</span></p>
 
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </div>
+        <p id="info"></p>
+        <div id="guess-wrapper">
+            <p id="jumbled-word"></p>
+
+            <input id="user-guess" type="text" placeholder="Enter your guess">
+            <div id="btn-container">
+                <button id="submit-btn">Submit</button>
+                <button id="reset-btn">Reset</button>
+            </div>
         </div>
 
     </div>
+    <!-- ------------------Footer-------------------------------------------- -->
+    <footer>
 
-   </div>
-   <p class="copy-right">&copy; Little Learners | All rights Reserved 2021</p>
+        <div class="foot-container">
+            <div class="footer-app">
+                <h2 class="foot-title">Download our Apps</h2>
 
-</footer>
+                <li><a href="#"><i class="fab fa-google-play"></i> Google Play</a></li>
+                <li><a href="#"><i class="fab fa-app-store-ios"></i> App Store</a></li>
+            </div>
+
+            <div class="footer-contact">
+                <h2 class="foot-title">Help</h2>
+
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./spelling.html">Spelling</a></li>
+                <li><a href="./jumble.html">Jumble</a></li>
+
+
+
+            </div>
+
+            <div class="footer-social">
+                <h2 class="foot-title">Social Media</h2>
+                <div class="socials">
+
+
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </div>
+
+            </div>
+
+        </div>
+        <p class="copy-right">&copy; Little Learners | All rights Reserved 2021</p>
+
+    </footer>
     <script src="./app.js"></script>
     <script src="./jumble.js"></script>
 </body>

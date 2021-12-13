@@ -38,6 +38,10 @@ body {
     margin: 0 20px;
 }
 
+.logo img {
+    height: 110px;
+}
+
 .navbar-links ul {
     margin: 0 20px;
     padding: 0;
@@ -90,7 +94,7 @@ body {
 /*--------------Banner Area----------------- */
 
 .banner {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,22 +104,20 @@ body {
 
 .banner-area {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-
-/* .bg-img img{
-    height: 200px;
-} */
+.bg-img img {
+    height: 400px;
+}
 
 .banner-text {
     max-width: 700px;
     text-align: justify;
     letter-spacing: 1px;
-    padding-top: 30px;
+    padding-top: 10px;
     line-height: 30px;
 }
 
@@ -135,7 +137,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 5%;
@@ -166,6 +168,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .banner-btn:before {
@@ -211,6 +214,7 @@ body {
     font-style: italic;
     letter-spacing: 2px;
     text-align: center;
+    padding: 20px;
 }
 
 .quiz {
@@ -238,7 +242,7 @@ body {
 }
 
 .question-1 {
-    border: 2px solid white;
+    border: none;
     background-color: #00bbf9;
     padding: 40px 40px;
     border-radius: 5px;
@@ -247,7 +251,7 @@ body {
 }
 
 .question-2 {
-    border: 2px solid white;
+    border: none;
     background-color: #fee440;
     padding: 40px 40px;
     border-radius: 5px;
@@ -273,7 +277,7 @@ input[type=radio] {
 }
 
 .question-3 {
-    border: 2px solid white;
+    border: none;
     background-color: #f15bb5;
     padding: 40px 40px;
     border-radius: 5px;
@@ -282,7 +286,7 @@ input[type=radio] {
 }
 
 .question-4 {
-    border: 2px solid white;
+    border: none;
     background-color: #9b5de5;
     padding: 40px 40px;
     border-radius: 5px;
@@ -331,6 +335,8 @@ input[type=radio] {
     font-size: 50px;
     letter-spacing: 2px;
     padding-top: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
 }
 
 .spell {
@@ -340,6 +346,7 @@ input[type=radio] {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .spell-box-1,
@@ -351,7 +358,7 @@ input[type=radio] {
     justify-content: center;
     align-items: center;
     margin: 10px 20px;
-    border: 2px solid #000;
+    border: none;
     border-radius: 5px;
     padding: 30px 28px 60px 28px;
 }
@@ -368,6 +375,7 @@ input[type=radio] {
 #name {
     font-size: 36px;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .sub-heading {
@@ -430,6 +438,8 @@ input[type=text] {
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 .hint {
@@ -439,7 +449,7 @@ input[type=text] {
 
 .clue {
     text-transform: lowercase;
-    font-size: 22px;
+    font-size: 28px;
     padding-top: 10px;
 }
 
@@ -448,26 +458,182 @@ input[type=text] {
     padding: 20px 0;
 }
 
-#horseAnswer {
+#horseAnswer,
+#catAnswer,
+#dogAnswer,
+#sharkAnswer {
     padding-top: 20px;
     font-size: 20px;
     letter-spacing: 2px;
     transition: ease-in .3s;
+    text-transform: uppercase;
 }
 
 
 /* ------------------------Spelling Game end -----------------------*/
 
 
+/* ------------------Word Jumble--------------- */
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    height: 500px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background-color: #00bbf9;
+}
+
+#game {
+    text-align: center;
+    margin: 100px auto;
+}
+
+#game-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#level,
+#score {
+    padding-right: 20px;
+}
+
+#game p span {
+    font-weight: 500;
+    text-align: center;
+}
+
+#info {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+    margin-left: 20px;
+}
+
+#guess-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#jumbled-word {
+    font-size: 50px;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 48px;
+    margin-bottom: 30px;
+}
+
+#jumbled-word {
+    display: block;
+    width: 100%;
+    padding-right: 40px;
+}
+
+#user-guess {
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: left;
+    padding-left: 10px;
+    border: none;
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.correct,
+.incorrect {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.correct {
+    color: green;
+    display: block;
+}
+
+.incorrect {
+    color: red;
+    display: block;
+}
+
+#submit-btn {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #9b5de5 100%);
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 30px;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+
+#submit-btn:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #9b5de5;
+    transform: translateY(-0.1em);
+}
+
+#reset-btn:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #f15bb5;
+    transform: translateY(-0.1em);
+}
+
+#reset-btn {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #f15bb5 100%);
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 36px;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
+
+
+/* -----------------Word Jumble  end---------------------*/
+
+
 /* -----------Footer --------------*/
 
 footer {
-    height: 180px;
+    height: 200px;
     background-color: #9b5de5;
-    display: flex;
-    flex-direction: column;
     color: #fff;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .foot-title {
@@ -555,6 +721,7 @@ footer {
 @media (max-width: 375px) {
     .toggle-button {
         display: flex;
+        padding-top: 28px;
     }
     .navbar-links {
         width: 100%;
@@ -586,66 +753,83 @@ footer {
     .sub-title {
         font-size: 20px;
     }
-    @media (max-width: 400px) {
-        .toggle-button {
-            display: flex;
-        }
-        .navbar-links {
-            width: 100%;
-            display: none;
-        }
-        .navbar {
-            flex-direction: column;
-            align-items: flex-start;
-            position: absolute;
-        }
-        .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-        .navbar-links li {
-            text-align: center;
-        }
-        .navbar-links li a {
-            padding: 16px 16px;
-        }
-        .navbar-links.active {
-            display: flex;
-            transition: ease-in-out .3s;
-        }
-        .title {
-            font-size: 40px;
-            padding-top: 30px;
-        }
-        .sub-title {
-            font-size: 20px;
-        }
-        .question-1,
-        .question-2,
-        .question-3,
-        .question-4 {
-            padding: 30px 30px;
-        }
-        .form-check-label {
-            font-size: 16px;
-        }
-        .lead {
-            font-size: 18px;
-        }
-        input[type=radio] {
-            width: 14px;
-            height: 14px;
-            cursor: pointer;
-        }
-        .quiz-form {
-            margin: 0 6px;
-        }
-        .logo {
-            font-size: 28px;
-            padding-top: 5px;
-        }
-        .quiz {
-            padding-top: 80px;
-        }
+    .bg-img img {
+        display: none;
+    }
+    .banner {
+        height: 100%;
+    }
+    .banner-text {
+        height: 100%;
+    }
+    .banner-text p {
+        width: 80%;
+        font-size: 18px;
+        margin-left: 10%;
+        margin-top: 60%;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+    .buttons {
+        position: relative;
+        margin-top: 150px;
+        margin-left: 60px;
+    }
+    .banner-image img {
+        height: 200px;
+    }
+    footer {
+        height: 100%;
+    }
+    .foot-container {
+        flex-direction: column;
+    }
+    .foot-title {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    .footer-app {
+        display: none;
+    }
+    .socials li {
+        font-size: 16px;
+    }
+    .copy-right {
+        font-size: 12px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    /* ------fix this------------------ */
+    .quiz {
+        height: 100%;
+    }
+    .quiz-form {
+        margin: 0 10px;
+    }
+    .lead {
+        font-size: 20px;
+    }
+    .form-check-label {
+        font-size: 18px;
+    }
+    .spell {
+        padding-top: 40px;
+    }
+    .spell-box-1 img,
+    .spell-box-2 img,
+    .spell-box-3 img,
+    .spell-box-4 img {
+        height: 150px;
+    }
+    #name {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .sub-heading {
+        padding: 10px 0;
+        font-size: 16px
     }
 }
